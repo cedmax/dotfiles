@@ -1,0 +1,10 @@
+install create-react-app
+install datauri
+install datauri-cli
+install gulp
+install http-server
+install imageoptim-cli
+install jspm
+install nodemon
+install serverless
+install english-words-that-are-not-yet-npm-packages
