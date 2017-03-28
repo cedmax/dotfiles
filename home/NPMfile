@@ -8,4 +8,3 @@ install jspm
 install nodemon
 install serverless
 install prioritize-yarn
-install english-words-that-are-not-yet-npm-packages
