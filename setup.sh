@@ -14,4 +14,9 @@ homeshick link dotfiles
 npm install npmundler -g
 npmundler install -g "$HOME/NPMfile"
 
-echo "Remember to install ExpressVPN, Sound Control and VSCode Settings Sync plugin"
+echo "Please input your Apple Store email: "
+read apple_store_email
+mas signin --dialog "$apple_store_email"
+source $HOME/Masfile
+
+echo "Remember to install ExpressVPN, Sound Control, Numi and VSCode Settings Sync plugin"
