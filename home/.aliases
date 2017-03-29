@@ -1,4 +1,4 @@
-#alias npm='prioritize-yarn'
+alias ynpm='prioritize-yarn'
 alias rm='trash'
 alias git-review='git difftool `git merge-base HEAD stage`'
 alias git-purge='git branch --merged stage | grep -v "stage$" | xargs git branch -d'
