@@ -8,4 +8,5 @@ alias ip='ifconfig | grep inet | grep broadcast | awk '\''{print $2}'\'
 alias reload='exec $SHELL -l'
 alias rm-node-modules="find . -name "node_modules" -exec rm -rvf '{}' +"
 alias ynpm='prioritize-yarn'
+alias backup='rsync -azvh --delete'
 #alias rm='trash'
