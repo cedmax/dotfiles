@@ -4,6 +4,9 @@ endbold=$(tput sgr0)
 #install oh-my-zshell
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+#force shell reload 
+exec $SHELL -l
+
 #install homebrew && check if the machine is configured to run it
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
@@ -42,6 +45,3 @@ ${bold}ExpressVPN${endbold} - https://www.expressvpn.com/vpn-software/vpn-mac
 ${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
 ${bold}Numi${endbold} - https://numi.io/ 
 ${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
-
-#force shell reload 
-exec $SHELL -l
