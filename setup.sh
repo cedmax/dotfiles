@@ -41,7 +41,7 @@ source $HOME/Masfile
 echo "
 ${bold}Automated setup done${endbold}
 Please remember to install also:
+${bold}Authy${endbold} - https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en
 ${bold}ExpressVPN${endbold} - https://www.expressvpn.com/vpn-software/vpn-mac
 ${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
-${bold}Numi${endbold} - https://numi.io/ 
 ${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
