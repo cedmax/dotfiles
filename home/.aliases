@@ -1,8 +1,6 @@
 alias ynpm='prioritize-yarn'
-alias rm='trash'
-alias git-review='git difftool `git merge-base HEAD stage`'
-alias git-purge='git branch --merged stage | grep -v "stage$" | xargs git branch -d'
-alias git-restore='git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"'
+#alias rm='trash'
+alias rm-node-modules="find . -name "node_modules" -exec rm -rvf '{}' +"
 alias colJs='pbpaste | highlight --syntax=js --style=rand01 -O rtf --font-size 28 --font Monaco | pbcopy'
 alias colHTML='pbpaste | highlight --syntax=html -O rtf --font-size 28 --font Monaco | pbcopy'
 alias colCSS='pbpaste | highlight --syntax=css -O rtf --font-size 28 --font Monaco | pbcopy'
