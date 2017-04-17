@@ -13,7 +13,6 @@ export NVM_DIR=~/.nvm
 source /usr/local/opt/nvm/nvm.sh
 
 source $HOME/.aliases
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 eval "$(thefuck --alias)"
 
 JAVA_HOME="/Library/Java/Home";export JAVA_HOME;
