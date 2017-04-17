@@ -13,7 +13,7 @@ brew install homeshick
 
 #clone and link my dotfiles with homeshick
 homeshick clone cedmax/dotfiles
-homeshick link dotfiles
+homeshick link -b dotfiles
 
 #install homebrew bundle - https://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew
 brew tap Homebrew/bundle
@@ -42,3 +42,6 @@ ${bold}ExpressVPN${endbold} - https://www.expressvpn.com/vpn-software/vpn-mac
 ${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
 ${bold}Numi${endbold} - https://numi.io/ 
 ${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
+
+#force shell reload 
+exec $SHELL -l
