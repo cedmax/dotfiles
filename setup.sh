@@ -16,7 +16,7 @@ brew install homeshick
 
 #clone and link my dotfiles with homeshick
 homeshick clone -b cedmax/dotfiles
-homeshick link -b dotfiles
+homeshick link -b -f dotfiles
 
 #install homebrew bundle - https://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew
 brew tap Homebrew/bundle
