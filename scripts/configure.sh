@@ -111,12 +111,6 @@ test defaults write com.apple.dock wvous-br-modifier -int 0
 title "Disable mouse enlargement with jiggle."
 test defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool true
 
-title "Disable annoying UI error sounds."
-test defaults write com.apple.systemsound com.apple.sound.beep.volume -int 0
-test defaults write com.apple.sound.beep feedback -int 0
-test defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -int 0
-test osascript -e \"set volume alert volume 0\"
-
 title "Show all filename extensions."
 test defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
