@@ -2,7 +2,7 @@ export ZSH=/Users/cedmax/.oh-my-zsh
 
 ZSH_THEME="risto"
 
-plugins=(git git-open)
+plugins=(git git-open brew npm node)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:Applications/SourceTree.app/Contents/Resources:/Users/cedmax/.bin"
