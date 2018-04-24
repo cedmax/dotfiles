@@ -28,9 +28,7 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   amend = !git add . && git commit --amend --no-edit
   review = !git difftool `git merge-base HEAD stage`
-  purge = !git branch -vv | grep ': gone]' | awk '{print $1}' 
-  purge-real-deal = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+  purge = !git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' 
+  purge-real-deal = !git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
   restore= !git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"
-
-#[commit]
-#  template = /Users/cedmax/.stCommitMsg
+  yolo = !git amend && git push --force
