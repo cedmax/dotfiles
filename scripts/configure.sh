@@ -41,12 +41,6 @@ test sudo scutil --set HostName "$computer_name"
 test sudo scutil --set LocalHostName "$computer_name"
 test sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "'$computer_name'"
 
-title "Disable sudden motion sensor. (Not useful for SSDs)."
-test sudo pmset -a sms 0 && \
-
-title "Disable press-and-hold for keys in favor of key repeat."
-test defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
 title "Disable auto-correct."
 test defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
@@ -84,10 +78,6 @@ test defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 title "Remove all icons in the Dock"
 test defaults write com.apple.dock persistent-apps -array
 
-#title "Add iOS & Watch Simulator to Launchpad""
-#test sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-#test sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
-
 title "Disable hot corners"
 # Top left screen corner
 test defaults write com.apple.dock wvous-tl-corner -int 0
@@ -101,12 +91,6 @@ test defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner
 test defaults write com.apple.dock wvous-br-corner -int 0
 test defaults write com.apple.dock wvous-br-modifier -int 0
-
-# title "Use the dark theme."
-# test defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle -string "Dark"
-
-# title "Save screenshots in PNG format."
-# test defaults write com.apple.screencapture type -string png
 
 title "Disable mouse enlargement with jiggle."
 test defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool true
