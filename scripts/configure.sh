@@ -133,7 +133,7 @@ test defaults write com.apple.safari UniversalSearchEnabled -int 0
 
 title "Disable Spotlight Suggestions, Bing Web Search, and other leaky data."
 export PYTHONPATH="/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/"
-test python ./scripts/fix_leaky_data.py
+test python $HOME/.homesick/repos/dotfiles/scripts/fix_leaky_data.py
 
 title "Set screen to lock as soon as the screensaver starts."
 test defaults write com.apple.screensaver askForPassword -int 1
@@ -149,7 +149,7 @@ title "Enable Stealth Mode. Computer will not respond to ICMP ping requests or c
 test sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -bool true
 
 title "Set all network interfaces to use Google DNS."
-test source ./scripts/use_google_dns.sh
+test source $HOME/.homesick/repos/dotfiles/scripts/use_google_dns.sh
 
 title "Disable wake on network access."
 test sudo systemsetup -setwakeonnetworkaccess off &>/dev/null
