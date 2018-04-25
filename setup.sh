@@ -39,14 +39,12 @@ read apple_store_email
 mas signin --dialog "$apple_store_email"
 source $HOME/Masfile
 
-source scripts/configure.sh
+source ./scripts/configure.sh
 
 #remember to install all the apps not available on brew cask/mac app store
 echo "
 ${bold}Automated setup done${endbold}
 Please remember to install also:
-${bold}Authy${endbold} - https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en
-${bold}Muzzle${endbold} - https://muzzleapp.com/
-${bold}ExpressVPN${endbold} - https://www.expressvpn.com/vpn-software/vpn-mac
+${bold}Sonos${endbold} - https://www.sonos.com/en-gb/controller-app
 ${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
 ${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
