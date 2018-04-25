@@ -4,7 +4,6 @@ install datauri-cli
 install gulp
 install http-server
 install imageoptim-cli
-install jspm
 install nodemon
 install serverless
 install prioritize-yarn
