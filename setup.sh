@@ -39,7 +39,7 @@ read apple_store_email
 mas signin --dialog "$apple_store_email"
 source $HOME/Masfile
 
-source $HOME/.homesick/repos/dotfiles/scripts/configure.sh
+#source $HOME/.homesick/repos/dotfiles/scripts/configure.sh
 
 #remember to install all the apps not available on brew cask/mac app store
 echo "
