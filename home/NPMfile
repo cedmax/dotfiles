@@ -8,3 +8,4 @@ install nodemon
 install serverless
 install prioritize-yarn
 install git-open
+install fkill-cli
