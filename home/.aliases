@@ -9,3 +9,4 @@ alias reload='exec $SHELL -l'
 alias rm-node-modules="find . -name "node_modules" -exec rm -rvf '{}' +"
 alias backup='rsync -azvh --delete'
 alias rm='trash'
+alias please='fuck'
