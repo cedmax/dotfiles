@@ -1,11 +1,4 @@
-install create-react-app
-install datauri
-install datauri-cli
-install gulp
 install http-server
-install imageoptim-cli
 install nodemon
-install serverless
-install prioritize-yarn
 install git-open
 install fkill-cli
