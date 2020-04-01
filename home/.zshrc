@@ -1,12 +1,12 @@
-export ZSH=/Users/cedmax/.oh-my-zsh
+export ZSH=/Users/mcedaro/.oh-my-zsh
 
 ZSH_THEME="risto"
 YARN_ENABLED=true
 
-plugins=(git git-open brew npm node zsh-iterm-touchbar)
+plugins=(git brew npm node git-open)
 
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:Applications/SourceTree.app/Contents/Resources:/Users/cedmax/.bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:Applications/SourceTree.app/Contents/Resources:/Users/mcedaro/.bin"
 source $ZSH/oh-my-zsh.sh
 
 
@@ -26,3 +26,5 @@ ulimit -n 10000
 export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+eval $(thefuck --alias)
