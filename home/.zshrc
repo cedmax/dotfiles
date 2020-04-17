@@ -1,4 +1,4 @@
-export ZSH=/Users/mcedaro/.oh-my-zsh
+export ZSH=/Users/marco.cedaro/.oh-my-zsh
 
 ZSH_THEME="risto"
 YARN_ENABLED=true
@@ -6,7 +6,7 @@ YARN_ENABLED=true
 plugins=(git brew npm node)
 
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:Applications/SourceTree.app/Contents/Resources:/Users/mcedaro/.bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/marco.cedaro/.bin"
 source $ZSH/oh-my-zsh.sh
 
 
