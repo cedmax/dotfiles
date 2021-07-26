@@ -45,4 +45,5 @@ ${bold}Automated setup done${endbold}
 Please remember to install also:
 ${bold}Sonos${endbold} - https://www.sonos.com/en-gb/controller-app
 ${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
+${bold}Beardie${endbold} - https://github.com/Stillness-2/beardie/releases/
 ${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
