@@ -2,3 +2,4 @@ install http-server
 install nodemon
 install git-open
 install fkill-cli
+install serve

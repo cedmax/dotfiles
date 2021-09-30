@@ -11,19 +11,19 @@
   excludesfile = /Users/marco.cedaro/.gitignore_global
   editor = code --wait
 [diff]
-  tool = Kaleidoscope
+	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustexitcode = true
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 [merge]
-  tool = Kaleidoscope
+	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-  prompt = false
+	prompt = false
 [mergetool]
-  prompt = false
   keepBackup = false
+	prompt = false
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   amend = !git add . && git commit --amend --no-edit
@@ -32,3 +32,5 @@
   purge-real-deal = !git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
   restore = !git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"
   yolo = !git amend && git push --force
+[init]
+	defaultBranch = main
