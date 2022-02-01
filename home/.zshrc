@@ -59,3 +59,4 @@ load-nvmrc() {
 
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 export JAVA_HOME="/usr/local/opt/openjdk@8/libexec/openjdk.jdk/Contents/Home/"
+export THEFUCK_PRIORITY="git_hook_bypass=1100"
