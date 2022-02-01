@@ -11,10 +11,6 @@ module.exports = {
     {
       match: /^https:\/\/jira\.photobox\.com\/$/,
       browser: "Brave Browser"
-    },
-    {
-      match: /^https:\/\/github\.com\/$/,
-      browser: "Firefox"
     }
   ]
 }
