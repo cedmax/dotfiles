@@ -5,11 +5,47 @@ module.exports = {
   defaultBrowser: "Firefox",      
   handlers: [
     {
-      match: /^https:\/\/esa38804\.live\.dynatrace\.com\/.*$/,
+      match: /^http(s)?:\/\/.*\.live\.dynatrace\.com\/.*$/,
       browser: "Brave Browser"
     },
     {
-      match: /^https:\/\/jira\.photobox\.com\/$/,
+      match: /^http(s)?:\/\/miro\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.eu\.looker\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.photobox\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/meet\.google\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.pagerduty\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/docs\.google\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/drive\.google\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.okta\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.workable\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
+      match: /^http(s)?:\/\/.*\.atlassian\.net\/.*$/,
       browser: "Brave Browser"
     }
   ]
