@@ -7,8 +7,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #force shell reload 
 exec $SHELL -l
 
-curl -L https://raw.githubusercontent.com/iridakos/goto/master/goto.bash > ~/.goto.bash
-
 #install homebrew && check if the machine is configured to run it
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
