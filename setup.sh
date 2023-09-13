@@ -8,7 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 exec $SHELL -l
 
 #install homebrew && check if the machine is configured to run it
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew doctor
 
 #install homeshick - http://garrettn.github.io/blog/2013/12/10/manage-your-dotfiles-easily-with-homeshick/
