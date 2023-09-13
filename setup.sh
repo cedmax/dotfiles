@@ -2,7 +2,7 @@ bold=$(tput bold)
 endbold=$(tput sgr0)
 
 #install oh-my-zshell
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #force shell reload 
 exec $SHELL -l
