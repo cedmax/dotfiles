@@ -4,6 +4,7 @@
   required = true
 [push]
   default = simple
+  autoSetupRemote = true
 [user]
   name = Marco Cedaro
   email = cedmax@users.noreply.github.com
@@ -33,4 +34,4 @@
   restore = !git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"
   yolo = !git amend && git push --force
 [init]
-	defaultBranch = main
+  defaultBranch = main

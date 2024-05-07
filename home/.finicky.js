@@ -5,6 +5,10 @@ module.exports = {
   defaultBrowser: "Firefox",      
   handlers: [
     {
+      match: /^http(s)?:\/\/.*\.adobe\.com\/.*$/,
+      browser: "Brave Browser"
+    },
+    {
       match: /^http(s)?:\/\/.*\.live\.dynatrace\.com\/.*$/,
       browser: "Brave Browser"
     },
