@@ -2,11 +2,11 @@ mas install 409203825 #Numbers
 mas install 409201541 #Pages
 mas install 1091189122 #Bear
 mas install 409183694 #Keynote
-mas install 668208984 #Giphy Capture
 mas install 408981434 #iMovie
 mas install 1532419400 #meetingBar
 mas install 966085870 #ticktick
 mas install 1475387142 #Tailscale
-mas install 1147396723 #Whatsapp
-mas install 802224528 #movie explorer
+mas install 886492891 #ExpressVPN
+# mas install 1147396723 #Whatsapp
+# mas install 802224528 #movie explorer
 mas upgrade

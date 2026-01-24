@@ -1,47 +1,40 @@
 bold=$(tput bold)
 endbold=$(tput sgr0)
 
-#install oh-my-zshell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Install oh-my-zsh without restarting shell
+echo "${bold}Installing oh-my-zsh...${endbold}"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-#force shell reload 
-exec $SHELL -l
-
-#install homebrew && check if the machine is configured to run it
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# Install Homebrew
+echo "${bold}Installing Homebrew...${endbold}"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"  # Make brew available immediately
 brew doctor
 
-#install homeshick - http://garrettn.github.io/blog/2013/12/10/manage-your-dotfiles-easily-with-homeshick/
+# Install homeshick
+echo "${bold}Installing homeshick...${endbold}"
 brew install homeshick
 
-#clone and link my dotfiles with homeshick
+# Clone and link dotfiles
+echo "${bold}Setting up dotfiles...${endbold}"
 homeshick clone -b cedmax/dotfiles
 homeshick link -b -f dotfiles
 
-#install homebrew bundle - https://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew
-brew tap Homebrew/bundle
-
-#install all the brew and brew cask utils and apps
+# Install Homebrew packages (installs all dependencies for .zshrc)
+echo "${bold}Installing Homebrew packages...${endbold}"
 brew bundle --file="$HOME/Brewfile"
 
-#install npmundler - https://www.npmjs.com/package/npmundler
-npm install -g npmundler 
+# Reload shell configuration with all changes
+source ~/.zprofile
+source ~/.zshrc
 
-#install all the npm global dependencies
+# Install Node.js and global packages
+echo "${bold}Setting up Node.js...${endbold}"
+fnm install --latest
+fnm default latest
+npm install -g npmundler
 npmundler install -g "$HOME/NPMfile"
 
-#ask the App store login to install apps via Mas - https://github.com/mas-cli/mas
-echo "
-${bold}Please input your Apple Store email:${endbold}"
-read apple_store_email
-mas signin --dialog "$apple_store_email"
+# Install Mac App Store apps
+echo "${bold}Installing App Store apps...${endbold}"
 source $HOME/Masfile
-
-#remember to install all the apps not available on brew cask/mac app store
-echo "
-${bold}Automated setup done${endbold}
-Please remember to install also:
-${bold}Sonos${endbold} - https://www.sonos.com/en-gb/controller-app
-${bold}Sound Control${endbold} - https://staticz.com/support/soundcontrol/
-${bold}Beardie${endbold} - https://github.com/Stillness-2/beardie/releases/
-${bold}VSCode Settings Sync${endbold} - https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
