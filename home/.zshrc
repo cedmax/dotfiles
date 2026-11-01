@@ -31,3 +31,7 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # TheFuck configuration
 export THEFUCK_PRIORITY="git_hook_bypass=1100"
+
+if [[ -d "~/.zsh_plugins/zsh-hist/" ]]; then 
+    source ~/.zsh_plugins/zsh-hist/zsh-hist.plugin.zsh
+fi

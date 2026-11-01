@@ -24,7 +24,9 @@ homeshick link -b -f dotfiles
 echo "${bold}Installing Homebrew packages...${endbold}"
 brew bundle --file="$HOME/Brewfile"
 
-# Reload shell configuration with all changes
+mkdir .zsh_plugins
+git clone git@github.com:marlonrichert/zsh-hist.git .zsh_plugins/zsh-hist 
+
 source ~/.zprofile
 source ~/.zshrc
 

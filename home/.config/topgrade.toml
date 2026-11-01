@@ -1,7 +1,12 @@
 [misc]
-disable = ["yarn", "pnpm", "containers", "git_repos"]
+disable = ["yarn", "pnpm", "containers", "colima", "uv"]
 cleanup = true
 skip_notify = true
 pre_sudo = true
 assume_yes = true
+
+[git]
+repos = ["~/Workspace/*/"]
+max_concurrency = 5
+arguments = "--rebase --autostash"
 

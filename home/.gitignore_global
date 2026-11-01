@@ -5,3 +5,4 @@
 .DS_Store
 .dccache
 ._*
+**/.claude/settings.local.json
